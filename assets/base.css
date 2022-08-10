@@ -4,7 +4,7 @@
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
-
+    --light-color: #fef6f5;
     --header-height: 120px;
     --navbar-height: 30px;
     --header-search-bottom-height: 24px;
@@ -23,6 +23,7 @@ html {
     user-select: none;
 }
 
+/* Reponsive */
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -33,9 +34,23 @@ html {
     width: 100%;
 }
 
-.grid__grow {
+.grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__column-two {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column-ten {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
 }
 
 /* Animation */
@@ -101,7 +116,7 @@ html {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
